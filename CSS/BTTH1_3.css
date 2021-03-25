@@ -1,0 +1,13 @@
+.thongtin{border-top-style: solid; border-color: darkgray;border-width: 0px;}
+
+.anh{width:60%; height:100%;margin-top: 40px;margin-left: 50px;}
+
+.footer{background-color: peachpuff; height: 60px; width: 100%; float: center; text-align: center;}
+
+.hoatdong{width:300px; float: right;; height:600px; background-color:violet;font-size: 130%;}
+
+.divth{width: 100%; background-color: white; height: 100%; text-align:left;}
+
+.div1{width:300px; float:left; height:600px; background-color:greenyellow;font-size: 130%;}
+
+.div2{width: 80%; background-color: white; height: 40%}
