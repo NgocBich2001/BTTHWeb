@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/BTTH3W.css">
+    </head>
+    <body>
+        <section class="head">
+            <div class="menu">
+                <div class="menu-left">
+                    <a href="#Banner"><span>BR</span> Architects</a> 
+                </div>
+                <div class="menu-right">
+                    <ul>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#title">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" style="margin-top: 30px;" id="Banner">
+            <div class="silde">
+                <img src="PictureLearn/Banner.jpg" > 
+                <div class="architect">
+                   <span>BR</span> Architects
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 30px;" >
+            <div class="projects">
+                <div class="title" id="project" >
+                    Projects
+                </div>
+                <div class="row">
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Summer House</div>
+                        <img src="PictureLearn/house1.jpg">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Brick House</div>
+                        <img src="PictureLearn/house2.jpg">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Renovated House</div>
+                        <img src="PictureLearn/house3.jpg">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Barn House</div>
+                        <img src="PictureLearn/house4.jpg">    
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Summer House</div>
+                        <img src="PictureLearn/house2.jpg">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Brick House</div>
+                        <img src="PictureLearn/house1.jpg">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Renovated House</div>
+                        <img src="PictureLearn/house4.jpg">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <div class="goctrai">Barn House</div>
+                        <img src="PictureLearn/house3.jpg">    
+                    </div>
+                </div> 
+            </div>
+        </section>
+        
+        <section style="margin-top: 40px;" >
+            <div class="projects" >
+                <div class="title" id="about">
+                    About
+                </div>
+                <div class="row" style="margin: 5px 5px 30px 5px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div> 
+
+                <div class="row">
+                    <div class="col-3 col-s-6 content">
+                        <img src="PictureLearn/John.jpg">
+                        <div style="margin-top: 10px; margin-bottom: 15px; font-size: 25px;">John Doe</div>
+                        <div style="margin-bottom: 15px; color: rgb(196, 179, 179);"> CEO & Founder</div>
+                        <div>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </div>  
+                        <input type="submit" value="Contact" style="margin-top: 10px;">  
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <img src="PictureLearn/Jane.jpg">
+                        <div style="margin-top: 10px; margin-bottom: 15px; font-size: 25px;">Jane Doe</div>
+                        <div style="margin-bottom: 15px; color: rgb(196, 179, 179);">Architect</div>
+                        <div>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </div> 
+                        <input type="submit" value="Contact" style="margin-top: 10px;">    
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <img src="PictureLearn/Mike.jpg">
+                        <div style="margin-top: 10px; margin-bottom: 15px; font-size: 25px;">Mike Ross</div>
+                        <div style="margin-bottom: 15px; color: rgb(196, 179, 179);">Architect</div>
+                        <div>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </div>   
+                        <input type="submit" value="Contact" style="margin-top: 10px;">   
+                    </div>
+                    <div class="col-3 col-s-6 content">
+                        <img src="PictureLearn/Dan.jpg">
+                        <div style="margin-top: 10px; margin-bottom: 15px; font-size: 25px;">Dan Star</div>
+                        <div style="margin-bottom: 15px; color: rgb(196, 179, 179);">Architect</div>
+                        <div>
+                            Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                        </div> 
+                        <input type="submit" value="Contact" style="margin-top: 10px;">    
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section style="margin-top: 60px;">
+            <div class="projects">
+                <div class="title" id="title">
+                    Contact
+                </div>
+                <div style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;">Lets get in touch and talk about your next project.</div>
+                <form>
+                    <input type="text" placeholder="Name" required name="Name" id="Name">
+                    <input type="text" placeholder="Email" required name="Email">
+                    <input type="text" placeholder="Subject" required name="Subject">
+                    <input type="text" placeholder="Comment" required name="Comment">
+                   
+                    <input type="submit" value="SEND MESSAGE" class="insend">
+                </form>
+            </div>
+        </section>
+        
+        <section class="projects" style="margin-top: 40px;">
+            <div class="silde">
+                <img src="PictureLearn/StreetCity.jpg" > 
+            </div>
+        </section>
+
+        <section style="height: 50px;text-align: center;color: white; padding-top: 20px; background-color: black; margin-top: 5px;">
+            Powered by <a href="#" class="foot">w3.css</a>
+        </section>
+    </body>
+</html>
