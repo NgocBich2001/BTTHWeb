@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/TrangChu.css">
+    <style>
+        * {
+            max-width: 1000px;
+            margin: 0px auto;
+        }
+
+        #se1 {
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+
+        #se1 p {
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            padding: 16px;
+        }
+
+        form {
+            margin-top: 30px;
+            padding: 10px;
+        }
+
+        form table tr {
+            margin: 20px;
+        }
+
+        form table tr td input {
+            width: 400px;
+            height: 30px;
+        }
+
+        form span {
+            color: red;
+        }
+
+        form span:hover~#an {
+            visibility: visible; 
+            /* ẩn đi những nó chiếm chỗ */
+        }
+
+        #an {
+           visibility: hidden;
+        }
+
+        form span:hover~#anns {
+            visibility: visible; 
+        }
+
+        #anns {
+            visibility: hidden;
+        }
+
+        form span:hover~#andc {
+            visibility: visible; 
+        }
+
+        #andc {
+            visibility: hidden;
+        }
+
+        form span:hover~#anemail {
+            visibility: visible; 
+        }
+
+        #anemail {
+            visibility: hidden;
+        }
+
+        form span:hover~#ansdt {
+            visibility: visible; 
+        }
+
+        #ansdt {
+            visibility: hidden;
+        }
+
+        form span:hover~#anmxn {
+            visibility: visible; 
+        }
+
+        #anmxn {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="se1">
+        <p>ĐĂNG KÝ KHÓA HỌC LẬP TRÌNH WEB VỚI ASP.NET</p>
+    </div>
+    <form method="post" action="" onsubmit="return check()">
+        <table>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="HoTen" id="HoTen" value=""> <span>*</span><span id="an">Bạn chưa nhập
+                        tên!</span></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="nam" id="nam" value="" style="width:20px"> Nam
+                    <input type="radio" name="nu" id="nu" value="" style="width:20px"> Nữ
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="text" name="ngaysinh" id="ngaysinh" value=""> <span>*</span><span id="anns">Bạn chưa
+                        nhập ngày sinh!</span></td>
+            </tr>
+
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text" name="diachi" id="diachi" value=""> <span>*</span><span id="andc">Bạn chưa nhập
+                        địa chỉ!</span></td>
+            </tr>
+
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="number" name="sdt" id="sdt" value=""> <span>*</span><span id="ansdt">Bạn chưa nhập số
+                        điện thoại!</span></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="emaill" id="emaill" value=""> <span>*</span><span id="anemail">Bạn chưa
+                        nhập email!</span></td>
+            </tr>
+
+            <tr>
+                <td>Mã xác nhận:</td>
+                <td><input type="number" name="maxn" id="maxn" value="" style="width:200px"> <span>*</span><span
+                        id="anmxn">Bạn chưa nhập lại mã xác nhận!</span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="dk" id="dk" value="Đăng ký"
+                        style="width:100px; border-radius: 5px; background-color: rgb(207, 188, 188);"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check() {
+            // Bước 1: Lấy giá trị của username và password
+            var username = document.getElementById('HoTen').value;
+            var dc=document.getElementById('diachi').value;
+
+            // Bước 2: Kiểm tra dữ liệu hợp lệ hay không
+            if (username == '') {
+                alert('Bạn chưa nhập tên');
+            }
+            else if(dc=='')
+            {alert('Bạn chưa nhập địa chỉ');} 
+            else {
+                alert('Dữ liệu hợp lệ, ta có thể chấp nhận submit form');
+                return true;
+            }
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>

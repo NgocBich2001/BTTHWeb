@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #se1 {
+            background-color: black;
+            height: 50px;
+            width: 500px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        #se1 p {
+            color: green;
+            padding: 16px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="se1">
+        <p id="hvn"></p>
+
+    </div>
+    <script>
+        setInterval(printTime, 1000);
+        function printTime() {
+
+            var today = new Date();
+            var g_day = today.getDay();
+            var d_name = '';
+            switch (g_day) {
+                case 0:
+                    d_name = "Chủ nhật";
+                    break;
+                case 1:
+                    d_name = "Thứ 2";
+                    break;
+                case 2:
+                    d_name = "Thứ 3";
+                    break;
+                case 3:
+                    d_name = "Thứ 4";
+                    break;
+                case 4:
+                    d_name = "Thứ 5";
+                    break;
+                case 5:
+                    d_name = "Thứ 6";
+                    break;
+                case 6:
+                    d_name = "Thứ 7";
+            }
+            var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getUTCFullYear();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = d_name + ',' + date + '-' + time;
+            document.getElementById("hvn").innerHTML = dateTime;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

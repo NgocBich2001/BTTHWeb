@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTH 6</title>
+    <link rel="stylesheet" href="css6.css">
+    <script src="bth6.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body onload="quantity()">
+    <div class="chitietsanpham">
+        <div class="title">
+            chi tiết sản phẩm
+        </div>
+        <div class="next">
+            <div class="avatar">
+                <div class="bigava">
+                    <img src="SoMiKeSocKaRo.jpg" alt="">
+                </div>
+                <div class="smallava">
+                    <ul>
+                        <input type="radio" name="mau" id="1">
+                            <input type="radio" name="mau" id="2">
+                            <input type="radio" name="mau" id="3">
+                            <li id="chontrang"><label for="trang"><img src="SoMiKeSocKaRo.jpg"></label></li>                          
+                            <li id="chonden"><label for="den"><img src="SoMiXanhKe.jpg"></label> </li>
+                            <li id="chondo"><label for="do"><img src="SoMiXanhTimThan.jpg"></label> </li>  
+                        <!-- <li><img src="SoMiKeSocKaRo.jpg" alt="" id="1"></li>
+                        <li><img src="SoMiXanhKe.jpg" alt="" id="2"></li>
+                        <li><img src="SoMiXanhTimThan.jpg" alt="" id="3"></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="text">
+                <div class="titletext">
+                    Áo sơ mi nam dài tay phong cách thời trang siêu cao cấp
+                </div>
+                <div class="gia">
+                    Giá: <span>350.000đ</span>
+                </div>
+                <div class="chonmau">
+                    <div class="d1">
+                        Chọn màu: <span>Đỏ</span>
+                    </div>
+                    <div class="listbutton">
+                        <ul>
+                            <input type="radio" name="mau" id="trang">
+                            <input type="radio" name="mau" id="den">
+                            <input type="radio" name="mau" id="do">
+                            <li id="chontrang"><label for="trang">Kẻ caro</label></li>                          
+                            <li id="chonden"><label for="den">Xanh kẻ</label> </li>
+                            <li id="chondo"><label for="do">Xanh tím than</label> </li>                       
+                        </ul>
+                    </div>
+                </div>
+                <div class="chonmau">
+                    <div class="d1">
+                        Chọn size: <span>XXL</span>
+                    </div>
+                    <div class="listbutton">
+                        <ul>
+                            <input type="radio" name="size" id="l">
+                            <input type="radio" name="size" id="m">
+                            <input type="radio" name="size" id="xl">
+                            <input type="radio" name="size" id="xxl">
+                            <li id="chonl"><label for="l">L</label></li>
+                            <li id="chonm"><label for="m">M</label></li>
+                            <li id="chonxl"><label for="xl">XL</label></li>
+                            <li id="chonxxl"><label for="xxl">XXL</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="soluong">
+                    <div class="left">
+                        <div class="left1">
+                            Số lượng:
+                        </div>
+                        <div class="quantity">
+                            <div class="decrease">-</div>
+                            <input style="text-align: center;" type="number" name="" id="number" value="1">
+                            <div class="increase">+</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button>Chọn mua</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thongtinchitiet">
+        <div class="title">
+            thông tin chi tiết
+        </div>
+        <table class="tablechitiet">
+            <tr>
+                <th>Thương hiệu</th>
+                <td>OEM</td>
+            </tr>
+            <tr>
+                <th>Xuất xứ thương hiệu</th>
+                <td>Việt Nam</td>
+            </tr>
+            <tr>
+                <th>Xuất xứ</th>
+                <td>Việt Nam</td>
+            </tr>
+            <tr>
+                <th>SKU</th>
+                <td>654865312</td>
+            </tr>
+            <tr>
+                <th>Chất liệu</th>
+                <td>Lụa</td>
+            </tr>
+        </table>
+    </div>
+    <div class="motasanpham">
+        <div class="title">
+           mô tả sản phẩm
+        </div>
+        <p>Áo sơ mi nam luôn là trang phục lựa chọn hàng đầu của nhiều chàng trai, bởi sự tiện ích và tính thời trang
+            mà nó mang lại cho người mặc.</p> <br>
+        <p>  Chúng tôi thường xuyên cập nhật những mẫu áo sơ mi mới từ kiểu dáng trơn, sọc caro đến sơ mi phối
+            họa tiết…, nhằm giúp khách hàng lựa chọn được những sản phẩm đẹp, chất lượng phù hợp với nhu cầu
+            và sở thích của mình một cách dễ dàng nhất.</p>
+           <div class="anhintext"><img src="SoMi.jpg" alt=""></div> 
+            <p>Giá sản phẩm trên đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc
+                phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng
+                cồng kềnh.</p>
+    </div>
+</body>
+</html>

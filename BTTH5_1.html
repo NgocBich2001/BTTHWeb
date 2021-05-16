@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/BTTH5_1.css">
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <div class="anh">
+            <img src="PictureLearn/AnhHoa.jpg" class="silde_img">
+            <img src="PictureLearn/AnhHoa1.jpg" class="silde_img">
+            <img src="PictureLearn/AnhHoa2.jpg" class="silde_img">
+            <button style="margin-left: 300px;  height: 50px; width: 50px; border-radius: 50%; border: none; background-color: green; color: white; margin-top: 30px;" onclick="ShowLeft()"><i class="fas fa-arrow-left"></i></button>
+            <button style="height: 50px; width: 50px; border-radius: 50%; border: none; background-color: green; color: white; margin-top: 30px;" onclick="ShowRight()"><i class="fas fa-arrow-right"></i></button>   
+        </div>
+        <script>
+            var listIndex = 0;
+            var list =  document.getElementsByClassName("silde_img");
+            for(x of list) {
+                x.style.display = "none";
+            }
+            list[listIndex].style.display = "block";
+            function ShowLeft(){
+                for(x of list) {
+                    x.style.display = "none";
+                }
+                if(listIndex == 0)
+                {
+                    listIndex =  list.length-1;
+                } else {
+                    listIndex = listIndex -1;
+                } 
+                list[listIndex].style.display = "block";
+                setTimeout(ShowLeft,5000);
+            }
+            function ShowRight(){
+                for(x of list) {
+                    x.style.display = "none";
+                }
+                if(listIndex == list.length-1)
+                {
+                    listIndex =  0;
+                } else {
+                    listIndex = listIndex + 1;
+                } 
+                list[listIndex].style.display = "block";
+                setTimeout(ShowRight,5000);
+            }
+        </script>
+    </body>
+</html>

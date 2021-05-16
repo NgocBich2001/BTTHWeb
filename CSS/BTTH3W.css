@@ -1,0 +1,285 @@
+/* Thêm menu responsive */
+.menu-right .icon {
+    color: chartreuse;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+.menu-right .icon:hover {
+     background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-right ul {display: none;}
+    .menu-right a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu-right.responsive {position: relative;}
+    .menu-right.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu-right.responsive ul {
+      position: absolute;
+      display: block;
+      top: 45px;
+      right: -5px;
+      z-index: 9999;
+      background-color: blue;
+    }
+    .menu-right.responsive ul li {
+        display: block;
+        width: 200px; 
+        text-align: left;
+        padding-left: 10px;
+      }
+  }
+/* Kết thúc */
+* {
+    box-sizing: border-box;
+    position: 0px;
+    margin: 0px;
+  }
+  
+.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+html 
+{
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 14px;
+}
+
+/* For mobile phones: */
+[class*="col-"] 
+{
+    width: 100%;
+    float: left;
+}
+  
+@media only screen and (min-width: 600px) 
+{
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px)
+{
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.menu 
+{
+      background-color: white;
+      position: relative;
+      height: 60px;
+     width: 100%;
+     letter-spacing: 4px;
+}
+
+.menu-right
+{
+      position: absolute;
+      top: 10px;
+      right: 5px;
+}
+
+.menu-left:hover 
+{
+    background-color: rgb(209, 202, 214);
+    cursor: pointer;}
+
+.menu-left span
+{
+    font-weight: bold;
+}
+
+.menu-left
+{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.menu-left a 
+{
+     text-decoration: none; 
+     color: black;
+}
+
+.menu-left a  span
+{
+    font-weight: bold;
+}
+.menu ul li 
+{
+      display: inline-block;
+      width: 120px; 
+      line-height: 40px;
+      text-align: center;
+}
+
+.menu ul li:hover 
+{
+   background-color: rgb(209, 202, 214);
+   cursor: pointer;
+}
+
+.menu ul li a 
+{
+    color: black;
+    text-decoration: none;
+}
+
+.silde 
+{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.silde img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.architect 
+{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 50px;
+    color: white;
+}
+
+.architect span 
+{
+    background-color: black;
+    padding: 15px;
+    opacity: 0.6;/*Độ mờ*/
+}
+
+.projects .title {
+    border-bottom: 1px solid rgb(209, 205, 205);
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.projects 
+{
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.content  
+{
+    padding: 8px 8px;
+    position: relative;
+}
+
+.content  img 
+{
+    width: 100%;
+}
+
+.content  .goctrai 
+{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+div .row input
+{
+    width: 100%; 
+    height: 40px;
+}
+
+.projects form input
+{
+    width: 100%; 
+    margin: 9px; 
+    height: 40px;     
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+div form .insend
+{
+    background-color: black; 
+    color: white; 
+    height: 40px; 
+    margin-left: 10px; 
+    margin-top: 20px; 
+    width: 180px;
+}
+
+.insend:hover
+{
+    background-color: rgb(173, 152, 152);
+}
+
+.foot
+{
+    color: white;
+}
+
+.foot:hover
+{
+    color: green;
+}
+
+.head
+{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    width: 100%;
+}
+

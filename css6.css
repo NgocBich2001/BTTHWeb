@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+
+}
+body{
+    padding-left: 5%;
+}
+.chitietsanpham{
+    width: 60%;
+}
+.title{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(0, 17, 255);
+    margin-bottom: 3%;
+}
+.next{
+    width: 100%;
+    display: flex;
+}
+.avatar{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.bigava{
+    width: 100%;
+    border: 3px solid gray;
+    height: 300px;
+}
+.bigava img{
+    width: 100%;
+    height: 100%;
+}
+.smallava{
+    width: 100%;
+    margin-top: 3%;
+}
+.smallava input{
+    display: none;
+}
+.smallava ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.smallava ul li{
+    width: 100%;
+    margin-right: 2%;
+    border: 3px solid gray;
+}
+.smallava ul li img{
+    width: 100%;
+}
+.text{
+    width: 60%;
+    margin-left: 5%;
+}
+.titletext{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.gia{
+    margin-top: 5%;
+}
+.gia span{
+    color: red;
+    font-weight: bold;
+}
+.chonmau{
+    margin-top: 3%;
+}
+.d1{
+    color: gray;
+}
+.d1 span{
+    color: black;
+}
+.listbutton{
+    width: 100%;
+    margin-top: 3%;
+}
+.listbutton ul{
+    list-style: none;
+}
+.listbutton ul li{
+    margin-right: 3%;
+    width: 10%;
+    border: 2px solid gray;
+    text-align: center;
+    display: inline-block;
+}
+.listbutton input{
+    display: none;
+}
+.listbutton li label{
+    width: 100%;
+    display: inline-block;
+}
+.listbutton #trang:checked ~ #chontrang{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton #den:checked ~ #chonden{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton #do:checked ~ #chondo{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton #l:checked ~ #chonl{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton #m:checked ~ #chonm{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton #xl:checked ~ #chonxl{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton #xxl:checked ~ #chonxxl{
+    background-color: rgb(108, 108, 235);
+}
+.listbutton label:hover{
+    cursor: pointer;
+}
+.soluong{
+    width: 50%;
+    display: flex;
+    margin-top: 3%;
+}
+.quantity{
+    width: 100%;
+    display: flex;
+}
+.decrease, .increase{
+    width: 20%;
+    text-align: center;
+    border: 2px solid gray;
+    user-select: none;
+}
+.decrease:hover, .increase:hover{
+    cursor: pointer;
+}
+.quantity input{
+    width: 20%;
+    border: 1px solid black;
+}
+.quantity input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.right{
+    margin-top: 1%;
+    width: 50%;
+}
+.right button{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color:white;
+}
+.thongtinchitiet{
+    width: 60%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.tablechitiet{
+    border-collapse: collapse;
+    text-align: left;
+}
+.tablechitiet th, .tablechitiet td{
+    width: 400px;
+    border: 2px solid rgb(14, 14, 14);
+    padding: 3%;
+}
+.tablechitiet th{
+    background-color: gray;
+}
+.motasanpham{
+    width: 60%;
+}
+.anhintext{
+    width: 100%;
+}
+.anhintext img{
+    width: 100%;
+}
